@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<div class="header">
+    <img src="MedicCare LOGO.png" alt="Logo" class="logo">
+    <div class="header-right">
+      <a href="mediccare home.html">Home</a>
+      <a href="Volunteer Community about.html">About</a>
+      <a class="active" href="#register">Become a patient</a>
+    </div>
+  </div>
+
+  <style>
+    .header {
+      overflow: hidden;
+      background-color: #C1ff72;
+      padding: 20px 10px;
+    }
+    
+    /* Style the header links */
+    .header a {
+      float: left;
+      color: #1F3642;
+      font-family:'Trebuchet MS';
+      text-align: center;
+      padding: 20px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+    
+     /* Logo styles */
+     .logo {
+    max-width: 100px;
+     }
+    /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+    .header a.logo {
+      max-width: 50px;
+    }
+    
+    /* Change the background color on mouse-over */
+    .header a:hover {
+      background-color: #1F3642;
+      color: white;
+    }
+    
+    /* Style the active/current link*/
+    .header a.active {
+      background-color: #1F3642;
+      color: white;
+    }
+    
+    /* Float the link section to the right */
+    .header-right {
+      float: right;
+    }
+    
+    /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+      .header-right {
+        float: none;
+      }
+    }
+    
+    </style>
+
+<body> 
+  <form>  
+  
+    <label> Firstname </label>         
+    <input type="text" name="firstname" size="15"/> <br> <br>  
+    <label> Middlename: </label>     
+    <input type="text" name="middlename" size="15"/> <br> <br>  
+    <label> Lastname: </label>         
+    <input type="text" name="lastname" size="15"/> <br> <br>  
+      
+    <label>   
+    Course :  
+    </label>   
+    <select>  
+    <option value="Course">Course</option>  
+    <option value="BCA">BCA</option>  
+    <option value="BBA">BBA</option>  
+    <option value="B.Tech">B.Tech</option>  
+    <option value="MBA">MBA</option>  
+    <option value="MCA">MCA</option>  
+    <option value="M.Tech">M.Tech</option>  
+    </select>  
+      
+    <br>  
+    <br>  
+    <label>   
+    Gender :  
+    </label><br>  
+    <input type="radio" name="male"/> Male <br>  
+    <input type="radio" name="female"/> Female <br>  
+    <br>  
+    <br>  
+      
+    <label>   
+    Phone :  
+    </label>  
+    <input type="text" name="country code"  value="+91" size="2"/>   
+    <input type="text" name="phone" size="10"/> <br> <br>  
+    Address:  
+    <br>  
+    <textarea cols="80" rows="5" value="address">  
+    </textarea>  
+    <br> <br>  
+    Email:
+    <br>  
+    <input type="email" id="email" name="email"/> <br>    
+    <br> <br>  
+    Password:  
+    <input type="Password" id="pass" name="pass"> <br>   
+    <br> <br>  
+    Re-type password:  
+    <input type="Password" id="repass" name="repass"> <br> <br> 
+
+    <input type="button"  value="Submit"/>  
+    </form>  
+    
+    <style> 
+
+      body{  
+        font-family: Calibri, Helvetica, sans-serif;  
+        background-color: white;  
+      }  
+      .container {  
+          padding: 50px;  
+        background-color: lightblue;  
+      }  
+        
+      input[type=text], input[type=password], textarea {  
+        width: 100%;  
+        padding: 15px;  
+        margin: 5px 0 22px 0;  
+        display: inline-block;  
+        border: none;  
+        background: #D8DDDF;  
+      }  
+      input[type=text]:focus, input[type=password]:focus {  
+        background-color: #C1ff72; 
+        opacity: ; 
+        outline: none;  
+      }  
+       div {  
+                  padding: 10px 0;  
+               }  
+      hr {  
+        border: 1px solid #f1f1f1;  
+        margin-bottom: 25px;  
+      }  
+      .registerbtn {  
+        background-color: #4CAF50;  
+        color: white;  
+        padding: 16px 20px;  
+        margin: 8px 0;  
+        border: none;  
+        cursor: pointer;  
+        width: 100%;  
+        opacity: 0.9;  
+      }  
+      .registerbtn:hover {  
+        opacity: 1;  
+      }  
+      </style>  
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
